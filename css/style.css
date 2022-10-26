@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.content {
+    height: 650px;
+    margin: 10px;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+}
