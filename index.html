@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@600;1000&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <!--header-->
     <header>
-        <div class="header-container">
-            <div class="header-row">
-                <div class="header-column-33 left">
-                    <div>
+        <div class="container header-container">
+            <div class="row">
+                <div class="column-33 left">
+                    <div class="header-content">
                         <ul>
-                            <li class="header-li">Donna</li>
-                            <li class="header-li">Uomo</li>
-                            <li class="header-li">Bambino</li>
+                            <li class="padding-right"><strong>Donna</strong></li>
+                            <li class="padding-right"><strong>Uomo</strong></li>
+                            <li class="padding-right"><strong>Bambino</strong></li>
                         </ul>
                     </div>
                 </div>
-                <div class="header-column-33">
-                    <div class="content">
+                <div class="column-33">
+                    <div class="header-content">
                         <img src="./img/boolean-logo.png" alt="boolean-logo">
                     </div>
                 </div>
-                <div class="header-column-33 right">
-                    <div>
-                        <i class="fa-regular fa-user"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-bag-shopping"></i>
+                <div class="column-33 right">
+                    <div class="header-content">
+                        <i class="fa-regular fa-user padding-left"></i>
+                        <i class="fa-regular fa-heart padding-left"></i>
+                        <i class="fa-solid fa-bag-shopping padding-left"></i>
                     </div>
                 </div>
             </div>
@@ -41,118 +44,154 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-33">
-                    <div class="content">
-                        <img src="./img/1.webp" alt="1">
-                        <div class="label red">-50%</div>
-                        <div class="label green">Sostenibilità</div>
-                        <div class="heart">&#10084;</div>
-                        <div class="description">
+                <div class="column-33">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/1.webp" alt="" class="main-image">
+                            <img src="./img/1b.webp" alt="" class="secondary-image">
+                            <div class="heart">&#10084;</div>
+                            <div class="lables">
+                                <span class="lable background-red">-50%</span>
+                                <span class="lable background-green">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="cart-text">
                             <div class="brand">Levi's</div>
                             <h3 class="item-name">RELAXED FIT TEE UNISEX</h3>
                             <div class="price">
-                                <span class="actual">14,99 €</span>
-                                <span class="old">29,99 €</span>
+                                <span class="red-text"><strong>14,99 €</strong></span>
+                                <span class="line-through">29,99 €</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-33">
-                    <div class="content">
-                        <img src="./img/2.webp" alt="2">
-                        <div class="label red">-30%</div>
-                        <div class="description">
+                <div class="column-33">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/2.webp" alt="" class="main-image">
+                            <img src="./img/2b.webp" alt="" class="secondary-image">
+                            <div class="heart">&#10084;</div>
+                            <div class="lables">
+                                <span class="lable background-red">-30%</span>
+                            </div>
+                        </div>
+                        <div class="cart-text">
                             <div class="brand">Guess</div>
                             <h3 class="item-name">ROSES TEE</h3>
                             <div class="price">
-                                <span class="actual">20,99 €</span>
-                                <span class="old">29,99 €</span>
+                                <span class="red-text"><strong>20,99 €</strong></span>
+                                <span class="line-through">29,99 €</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-33">
-                    <div class="content">
-                        <img src="./img/3.webp" alt="3">
-                        <div class="label red">-30%</div>
-                        <div class="description">
+                <div class="column-33">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/3.webp" alt="" class="main-image">
+                            <img src="./img/3b.webp" alt="" class="secondary-image">
+                            <div class="heart">&#10084;</div>
+                            <div class="lables">
+                                <span class="lable background-red">-30%</span>
+                            </div>
+                        </div>
+                        <div class="cart-text">
                             <div class="brand">Come Zucchero Filato</div>
                             <h3 class="item-name">VOGLIA DI COLORI PASTELLO</h3>
                             <div class="price">
-                                <span class="actual">129,99 €</span>
-                                <span class="old">184,99 €</span>
+                                <span class="red-text"><strong>129,99 €</strong></span>
+                                <span class="line-through">184,99 €</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-33">
-                    <div class="content">
-                        <img src="./img/4.webp" alt="4">
-                        <div class="label red">-50%</div>
-                        <div class="label green">Sostenibilità</div>
-                        <div class="description">
+            <div class="row margin-50">
+                <div class="column-33">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/4.webp" alt="" class="main-image">
+                            <img src="./img/4b.webp" alt="" class="secondary-image">
+                            <div class="heart">&#10084;</div>
+                            <div class="lables">
+                                <span class="lable background-red">-50%</span>
+                                <span class="lable background-green">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="cart-text">
                             <div class="brand">Levi's</div>
                             <h3 class="item-name">TEE UNISEX</h3>
                             <div class="price">
-                                <span class="actual">14,99 €</span>
-                                <span class="old">29,99 €</span>
+                                <span class="red-text"><strong>14,99 €</strong></span>
+                                <span class="line-through">29,99 €</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-33">
-                    <div class="content">
-                        <img src="./img/5.webp" alt="5">
-                        <div class="description">
+                <div class="column-33">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/5.webp" alt="" class="main-image">
+                            <img src="./img/5b.webp" alt="" class="secondary-image">
+                            <div class="heart">&#10084;</div>
+                        </div>
+                        <div class="cart-text">
                             <div class="brand">Maya Deluxe</div>
                             <h3 class="item-name">STRIPE BODICE</h3>
                             <div class="price">
-                                <span class="actual">99,99 €</span>
+                                <span class="red-text"><strong>99,99 €</strong></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-33">
-                    <div class="content">
-                        <img src="./img/6.webp" alt="6">
-                        <div class="label green">Sostenibilità</div>
-                        <div class="description">
+                <div class="column-33">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/6.webp" alt="" class="main-image">
+                            <img src="./img/6b.webp" alt="" class="secondary-image">
+                            <div class="heart">&#10084;</div>
+                            <div class="lables">
+                                <span class="lable background-green">Sostenibilità</span>
+                            </div>
+                        </div>
+                        <div class="cart-text">
                             <div class="brand">Esprit</div>
                             <h3 class="item-name">MAGLIONE - BLACK</h3>
                             <div class="price">
-                                <span class="actual">29,99 €</span>
+                                <span class="red-text"><strong>29,99 €</strong></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </main>
 <!--footer-->
     <footer>
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-column">
-                    <div class="footer-text">
+        <div class="container footer-container">
+            <div class="row">
+                <div class="column-50 left">
+                    <div class="footer-content">
                         <h3>Booleando s.r.l</h3>
-                        <ul class="footer-ul-left">
-                            <li class="left-li">Informazioni legali</li>
-                            <li class="left-li">Informativa sulla privacy</li>
-                            <li class="left-li">Diritto di recesso</li>
+                        <ul class="padding-top">
+                            <li class="padding-right">Informazioni legali</li>
+                            <li class="padding-right">Informativa sulla privacy</li>
+                            <li class="padding-right">Diritto di recesso</li>
                         </ul>
                     </div>
-                    <div class="footer-text">
-                        <div class="strong"><strong>trovaci anche su</strong></div>
-                        <ul class="footer-ul-right">
-                            <li class="right-li"><i class="fa-brands fa-square-twitter"></i></li>
-                            <li class="right-li"><i class="fa-brands fa-square-facebook"></i></li>
-                            <li class="right-li"><i class="fa-brands fa-square-instagram"></i></li>
-                            <li class="right-li"><i class="fa-brands fa-square-pinterest"></i></li>
-                            <li class="right-li"><i class="fa-brands fa-square-youtube"></i></li>
+                </div>
+                <div class="column-50 right">
+                    <div class="footer-content">
+                        <div><strong>trovaci anche su</strong></div>
+                        <ul class="padding-top">
+                            <li class="padding-left"><i class="fa-brands fa-square-twitter"></i></li>
+                            <li class="padding-left"><i class="fa-brands fa-square-facebook"></i></li>
+                            <li class="padding-left"><i class="fa-brands fa-square-instagram"></i></li>
+                            <li class="padding-left"><i class="fa-brands fa-square-pinterest"></i></li>
+                            <li class="padding-left"><i class="fa-brands fa-square-youtube"></i></li>
                         </ul>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
